@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ac6f5f21-28d9-4168-8588-930d612ae982",
+		"name": "Web dev collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5600/department/GetById",
+			"id": "bf1030ee-fa32-4bec-906a-9b195d22ee93",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/department/GetById"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/department/UpdateEmp",
+			"id": "ddd7fbaf-6219-4990-ba15-9fd3af143d08",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"shahmeer\",\r\n    \"password\":\"shamS34@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/department/UpdateEmp"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/department/DeleteById",
+			"id": "1d983811-08de-45ee-b8d3-e257c3634359",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jobid\":23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/department/DeleteById"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/auth/signup",
+			"id": "d2e6c3f2-ca1a-49ac-8160-27f4c780e9f0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"cena@google.com\",\r\n    \"jobid\":31,\r\n    \"name\":\"cena\",\r\n    \"age\":22,\r\n    \"id\":6,\r\n    \"password\":\"Cen@tion2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/auth/login",
+			"id": "979a1b8a-139d-4f77-85dc-fc103bc9bd82",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ali@google.com\",\r\n    \"password\":\"aliman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/department/CreateJob",
+			"id": "23c79a01-1358-477b-b56d-7ec1e725e900",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsaUBnb29nbGUuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xNlQxNTo0MTo0NC42MjdaIiwiYWdlIjo1MiwiaWF0IjoxNzA4MDk4MTA0LCJleHAiOjE3MDgxODQ1MDR9.Yhuf5ClkRjv2LqAZQo_A_2eo63c1xLhwKFFZ7cjoLjg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"cena@google.com\",\r\n    \"jobid\":31,\r\n    \"depid\":12,\r\n    \"jobname\":\"electrician\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5600/department/CreateJob"
+			},
+			"response": []
+		}
+	]
+}
